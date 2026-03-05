@@ -21,7 +21,7 @@ export default function Coach() {
           <div className="md:col-span-2">
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
-                src="/images/caya-drive/DSC00257.jpg"
+                src="/images/caya-drive/IMG_5419.jpg"
                 alt="Elom Ahlijah — Founder of CAYA"
                 className="w-full h-full object-cover object-top"
               />
@@ -67,7 +67,9 @@ export default function Coach() {
                 View Packages
               </a>
               <a
-                href="#contact"
+                href="https://calendly.com/truegains/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block border border-white/20 hover:bg-[#24554B] hover:text-white hover:border-[#24554B] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all text-center"
               >
                 Book A Consultation

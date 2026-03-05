@@ -150,7 +150,9 @@ function PackageCard({ pkg }: { pkg: typeof packages[0] }) {
       </div>
 
       <a
-        href="#contact"
+        href="https://calendly.com/truegains/30min"
+        target="_blank"
+        rel="noopener noreferrer"
         className={`block w-full text-center font-bold uppercase tracking-widest py-4 text-xs transition-all ${
           pkg.highlighted
             ? 'bg-[#24554B] text-white hover:bg-[#1D4A40]'

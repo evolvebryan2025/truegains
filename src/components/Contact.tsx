@@ -29,51 +29,16 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="bg-[#1F1F1F]/50 border border-white/5 p-8 sm:p-12">
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            className="space-y-6"
+        <div className="text-center">
+          <a
+            href="https://calendly.com/truegains/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-[#24554B] text-white font-bold uppercase tracking-widest px-12 py-5 text-sm hover:bg-[#1D4A40] transition-colors"
           >
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-[#D8CFC4] mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="Your name"
-                  className="w-full bg-[#1F1F1F] border border-white/10 px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:border-[#24554B] transition-colors"
-                />
-              </div>
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-widest text-[#D8CFC4] mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  className="w-full bg-[#1F1F1F] border border-white/10 px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:border-[#24554B] transition-colors"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-widest text-[#D8CFC4] mb-2">
-                Tell us about your goals...
-              </label>
-              <textarea
-                rows={5}
-                placeholder="What are you looking to achieve? Training goals, current fitness level, preferred package..."
-                className="w-full bg-[#1F1F1F] border border-white/10 px-4 py-3 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:border-[#24554B] transition-colors resize-none"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-[#24554B] text-white font-bold uppercase tracking-widest py-4 text-sm hover:bg-[#1D4A40] transition-colors"
-            >
-              <Send size={16} />
-              Book Your Consultation
-            </button>
-          </form>
+            <Send size={16} />
+            Book Your Consultation
+          </a>
         </div>
       </div>
     </section>

@@ -13,15 +13,6 @@ export default function Hero() {
         >
           <source src="/videos/hero-bg.mp4" type="video/mp4" />
         </video>
-        {/* Fallback background image if no video */}
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            backgroundImage: 'url(/images/caya-drive/DSC00277.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
       </div>
 
       {/* Gradient overlay */}

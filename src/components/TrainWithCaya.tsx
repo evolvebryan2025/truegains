@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 
 const galleryImages = [
-  { src: '/images/caya-drive/DSC00815.jpg', alt: 'Pull-up training at Caya event' },
-  { src: '/images/caya-drive/_DSC0664.JPG', alt: 'Dynamic warm-up with crowd' },
-  { src: '/images/caya-drive/DSC00325.jpg', alt: 'Elom carrying Caya flag on the run' },
-  { src: '/images/caya-drive/DSC00443.jpg', alt: 'Fit athletes post-training' },
-  { src: '/images/caya-drive/DSC00523.jpg', alt: 'Community at the venue post-run' },
-  { src: '/images/caya-drive/DSC00751.jpg', alt: 'Ice bath endurance challenge' },
+  { src: '/images/caya-drive/DSC00325.jpg', alt: 'Elom carrying the Caya flag on the run' },
+  { src: '/images/caya-drive/DSC00443.jpg', alt: 'Elom with the crew post-training' },
+  { src: '/images/caya-drive/DSC00277.jpg', alt: 'Elom leading the Caya Run Club pack' },
+  { src: '/images/caya-drive/_DSC0619.JPG', alt: 'Elom connecting with the community' },
+  { src: '/images/caya-drive/DSC00523.jpg', alt: 'Elom at the venue post-run' },
+  { src: '/images/caya-drive/DSC00289.jpg', alt: 'Elom leading the crew on the vehicle' },
 ]
 
 export default function TrainWithCaya() {
@@ -45,12 +45,10 @@ export default function TrainWithCaya() {
 
         {/* Visual Content - Transformation & Training Photos */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {galleryImages.map((img, i) => (
+          {galleryImages.map((img) => (
             <div
               key={img.src}
-              className={`relative overflow-hidden ${
-                i === 0 ? 'row-span-2 aspect-[3/4]' : 'aspect-square'
-              }`}
+              className="relative overflow-hidden aspect-[4/3]"
             >
               <img
                 src={img.src}

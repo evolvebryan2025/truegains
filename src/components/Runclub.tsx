@@ -31,7 +31,6 @@ const galleryImages = [
   { src: '/images/caya-drive/DSC00703.jpg', alt: 'Post-run recovery session' },
   { src: '/images/caya-drive/DSC00713.jpg', alt: 'Community bonding after the run' },
   { src: '/images/caya-drive/DSC00751.jpg', alt: 'Ice bath endurance challenge' },
-  { src: '/images/caya-drive/DSC00751-2.jpg', alt: 'Cold plunge group moment' },
   { src: '/images/caya-drive/DSC00815.jpg', alt: 'Pull-up training at Caya event' },
 ]
 
