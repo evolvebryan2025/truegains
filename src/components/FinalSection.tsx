@@ -40,7 +40,7 @@ export default function FinalSection() {
             Join Runclub
           </a>
           <a
-            href="https://calendly.com/truegains/30min"
+            href="https://calendly.com/elomahlijah/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block border border-white/20 hover:bg-[#B86B4B] hover:text-white hover:border-[#B86B4B] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all"

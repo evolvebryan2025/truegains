@@ -150,7 +150,7 @@ function PackageCard({ pkg }: { pkg: typeof packages[0] }) {
       </div>
 
       <a
-        href="https://calendly.com/truegains/30min"
+        href="https://calendly.com/elomahlijah/30min"
         target="_blank"
         rel="noopener noreferrer"
         className={`block w-full text-center font-bold uppercase tracking-widest py-4 text-xs transition-all ${

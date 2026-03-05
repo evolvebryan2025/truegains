@@ -31,7 +31,7 @@ export default function Contact() {
 
         <div className="text-center">
           <a
-            href="https://calendly.com/truegains/30min"
+            href="https://calendly.com/elomahlijah/30min"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 bg-[#24554B] text-white font-bold uppercase tracking-widest px-12 py-5 text-sm hover:bg-[#1D4A40] transition-colors"

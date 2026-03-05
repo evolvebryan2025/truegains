@@ -79,7 +79,7 @@ export default function Bootcamps() {
             </div>
 
             <a
-              href="https://calendly.com/truegains/30min"
+              href="https://calendly.com/elomahlijah/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full text-center bg-[#B86B4B] text-white font-bold uppercase tracking-widest py-4 text-xs hover:bg-[#A35D40] transition-colors"
