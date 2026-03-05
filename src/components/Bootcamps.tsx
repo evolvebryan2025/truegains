@@ -29,13 +29,12 @@ export default function Bootcamps() {
     <section id="bootcamps" ref={ref} className="py-24 px-6 border-y border-white/5">
       <div className={`max-w-5xl mx-auto transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#B86B4B] mb-4 block">
-            Caya Bootcamps
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight mb-6">
-            Higher intensity.<br />
-            <span className="text-[#24554B]">Still community.</span>
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase leading-tight mb-4">
+            Caya <span className="text-[#B86B4B]">Bootcamp</span>
           </h2>
+          <p className="text-[#D8CFC4] text-lg sm:text-xl font-medium mb-6">
+            Higher intensity. Still community.
+          </p>
           <p className="text-[#D8CFC4] text-sm max-w-2xl mx-auto leading-relaxed">
             Bootcamps are for those who want to push properly. Strength. Conditioning. Engine work. A tougher room — but still the same Caya energy.
           </p>

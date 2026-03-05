@@ -21,7 +21,7 @@ export default function Coach() {
           <div className="md:col-span-2">
             <div className="relative aspect-[3/4] overflow-hidden">
               <img
-                src="/images/hero-img.png"
+                src="/images/caya-drive/DSC00257.jpg"
                 alt="Elom Ahlijah — Founder of CAYA"
                 className="w-full h-full object-cover object-top"
               />
@@ -34,22 +34,28 @@ export default function Coach() {
             <span className="text-xs font-bold uppercase tracking-widest text-[#6F8F85] mb-4 block">
               Meet Your Coach
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black uppercase leading-tight mb-2">
+            <h2 className="text-3xl sm:text-4xl font-black uppercase leading-tight mb-6">
               Elom Ahlijah
             </h2>
-            <p className="text-[#B86B4B] text-sm font-bold uppercase tracking-wide mb-6">
-              Founder of Caya &middot; Personal Training Professional
-            </p>
 
             <div className="space-y-4 mb-8">
               <p className="text-[#D8CFC4] text-sm leading-relaxed">
-                CAYA was built with one principle: show up as you are, and leave better than you came. No pretence. No ego. Just work, community, and consistent progress.
+                It all started when I was 16, kicking off my own fitness journey. What began as a personal passion soon grew into something much bigger.
               </p>
               <p className="text-[#D8CFC4] text-sm leading-relaxed">
-                Whether you're joining the Runclub for the first time or committing to a full transformation through personal training, Elom's hands-on approach means you're never doing it alone.
+                In 2020, during lockdown, I founded my own fitness brand. What started as a way to share my love for fitness has since evolved into a global coaching business that's helped over <span className="text-white font-bold">300 clients transform their health and achieve their fitness goals.</span>
               </p>
               <p className="text-[#D8CFC4] text-sm leading-relaxed">
-                Every programme is built around you — your goals, your body, your lifestyle — and reviewed as you progress.
+                A little over <span className="text-white font-bold">two years ago</span>, I made the move to <span className="text-white font-bold">Dubai</span>, an incredible hub of energy and growth that inspires me every day.
+              </p>
+              <p className="text-[#D8CFC4] text-sm leading-relaxed">
+                Since moving here, I also founded <span className="text-white font-bold">Caya Runclub</span>, a community bringing together people who are passionate about health, fitness, and connection. What started as a simple idea has grown into a space where people come together to run, stay active, meet like-minded individuals, and support each other in building healthier lifestyles.
+              </p>
+              <p className="text-[#D8CFC4] text-sm leading-relaxed">
+                Today, <span className="text-white font-bold">TrueGains operates across the UAE, UK, Canada, US, and Thailand</span>, and we're only just getting started. I'm passionate about helping people from all walks of life feel stronger, healthier, and more confident.
+              </p>
+              <p className="text-[#D8CFC4] text-sm leading-relaxed">
+                Whether you're looking to <span className="text-white font-bold">lose weight, build muscle, improve your running, or simply find consistency</span>, I'm here to help you create a plan that fits your lifestyle.
               </p>
             </div>
 

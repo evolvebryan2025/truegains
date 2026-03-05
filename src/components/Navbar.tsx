@@ -70,7 +70,7 @@ export default function Navbar() {
             href="#packages"
             className="bg-[#24554B] text-white font-bold uppercase tracking-widest px-8 py-3 text-xs hover:bg-[#1D4A40] transition-colors"
           >
-            Train With Caya
+            Train With Elom
           </a>
         </div>
 
@@ -106,7 +106,7 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="block text-center bg-[#24554B] text-white font-bold uppercase tracking-widest px-8 py-3 text-xs hover:bg-[#1D4A40] transition-colors"
           >
-            Train With Caya
+            Train With Elom
           </a>
         </div>
       )}

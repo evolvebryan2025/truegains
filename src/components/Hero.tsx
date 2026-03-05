@@ -8,17 +8,16 @@ export default function Hero() {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover opacity-40"
-          poster="/images/hero-img.png"
+          className="w-full h-full object-cover opacity-60"
+          poster="/images/caya-drive/DSC00277.jpg"
         >
-          {/* Replace src with actual CAYA run club video */}
-          <source src="" type="video/mp4" />
+          <source src="/videos/hero-bg.mp4" type="video/mp4" />
         </video>
         {/* Fallback background image if no video */}
         <div
           className="absolute inset-0 opacity-30"
           style={{
-            backgroundImage: 'url(/images/hero-img.png)',
+            backgroundImage: 'url(/images/caya-drive/DSC00277.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -26,13 +25,13 @@ export default function Hero() {
       </div>
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1F1F1F]/60 via-[#1F1F1F]/40 to-[#1F1F1F]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1F1F1F]/40 via-[#1F1F1F]/30 to-[#1F1F1F]" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-black uppercase leading-[0.95] tracking-tight mb-6">
           <span className="text-white">Come As</span>
           <br />
-          <span className="text-[#24554B]">You Are.</span>
+          <span className="text-white">You Are.</span>
         </h1>
 
         <p className="text-[#D8CFC4] text-base sm:text-lg max-w-xl mx-auto mb-12 leading-relaxed">
@@ -52,7 +51,7 @@ export default function Hero() {
             href="#packages"
             className="inline-block border border-white/20 hover:bg-[#24554B] hover:text-white hover:border-[#24554B] text-white px-8 py-4 text-sm font-bold uppercase tracking-widest transition-all"
           >
-            Train With Caya
+            Train With Elom
           </a>
         </div>
       </div>

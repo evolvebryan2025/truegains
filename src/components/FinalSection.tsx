@@ -27,7 +27,7 @@ export default function FinalSection() {
         <h2 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase leading-[0.95] tracking-tight mb-12">
           <span className="text-white">Come As</span>
           <br />
-          <span className="text-[#24554B]">You Are.</span>
+          <span className="text-white">You Are.</span>
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
