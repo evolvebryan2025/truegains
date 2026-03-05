@@ -2,12 +2,37 @@ import { useEffect, useRef, useState } from 'react'
 import { MapPin, Calendar, Clock } from 'lucide-react'
 
 const galleryImages = [
+  { src: '/images/caya-drive/_DSC0619.JPG', alt: 'Caya community warm-up session' },
   { src: '/images/caya-drive/_DSC0629.JPG', alt: 'Caya Runclub warm-up at Coterie Kitchen' },
-  { src: '/images/caya-drive/DSC00277.jpg', alt: 'Group running with Caya Run Club banner' },
+  { src: '/images/caya-drive/_DSC0631.JPG', alt: 'Runners getting ready to go' },
+  { src: '/images/caya-drive/_DSC0642.JPG', alt: 'Group energy before the run' },
+  { src: '/images/caya-drive/_DSC0652.JPG', alt: 'Community members stretching' },
+  { src: '/images/caya-drive/_DSC0655.JPG', alt: 'Pre-run group moment' },
+  { src: '/images/caya-drive/_DSC0664.JPG', alt: 'Dynamic warm-up with the crowd' },
+  { src: '/images/caya-drive/DSC00189.jpg', alt: 'Early morning run vibes' },
   { src: '/images/caya-drive/DSC00219.jpg', alt: 'Community group photo' },
+  { src: '/images/caya-drive/DSC00249.jpg', alt: 'Runners on the route' },
+  { src: '/images/caya-drive/DSC00257.jpg', alt: 'Mid-run energy' },
   { src: '/images/caya-drive/DSC00261.jpg', alt: 'Crowd energy at Caya Runclub event' },
+  { src: '/images/caya-drive/DSC00277.jpg', alt: 'Group running with Caya Run Club banner' },
+  { src: '/images/caya-drive/DSC00289.jpg', alt: 'Runners pushing the pace' },
+  { src: '/images/caya-drive/DSC00325.jpg', alt: 'Elom carrying the Caya flag' },
+  { src: '/images/caya-drive/DSC00361.jpg', alt: 'Community run in progress' },
+  { src: '/images/caya-drive/DSC00382.jpg', alt: 'Runners crossing paths' },
+  { src: '/images/caya-drive/DSC00397.jpg', alt: 'Group finishing strong' },
   { src: '/images/caya-drive/DSC00433.jpg', alt: 'Runners enjoying the run together' },
+  { src: '/images/caya-drive/DSC00443.jpg', alt: 'Fit athletes post-training' },
+  { src: '/images/caya-drive/DSC00475.jpg', alt: 'Post-run smiles' },
+  { src: '/images/caya-drive/DSC00509.jpg', alt: 'Community cool-down moment' },
+  { src: '/images/caya-drive/DSC00523.jpg', alt: 'Community at the venue post-run' },
+  { src: '/images/caya-drive/DSC00560.jpg', alt: 'Caya crew hanging out' },
+  { src: '/images/caya-drive/DSC00669.jpg', alt: 'Team spirit at the event' },
   { src: '/images/caya-drive/DSC00698.jpg', alt: 'Ice bath community moment' },
+  { src: '/images/caya-drive/DSC00703.jpg', alt: 'Post-run recovery session' },
+  { src: '/images/caya-drive/DSC00713.jpg', alt: 'Community bonding after the run' },
+  { src: '/images/caya-drive/DSC00751.jpg', alt: 'Ice bath endurance challenge' },
+  { src: '/images/caya-drive/DSC00751-2.jpg', alt: 'Cold plunge group moment' },
+  { src: '/images/caya-drive/DSC00815.jpg', alt: 'Pull-up training at Caya event' },
 ]
 
 export default function Runclub() {
@@ -40,12 +65,10 @@ export default function Runclub() {
 
         {/* Photo Gallery */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-16">
-          {galleryImages.map((img, i) => (
+          {galleryImages.map((img) => (
             <div
               key={img.src}
-              className={`relative overflow-hidden ${
-                i === 0 ? 'row-span-2 aspect-[3/4]' : 'aspect-square'
-              }`}
+              className="relative overflow-hidden aspect-[4/3]"
             >
               <img
                 src={img.src}
