@@ -23,6 +23,8 @@ export default function Coach() {
               <img
                 src="/images/caya-drive/IMG_5419.jpg"
                 alt="Elom Ahlijah — Founder of CAYA"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1F1F1F] via-transparent to-transparent" />
