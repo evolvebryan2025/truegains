@@ -64,17 +64,10 @@ const packages = [
     price: '10,000',
     priceAED: '50,000 AED',
     tagline: 'Elite tier.',
-    includes: 'Everything in F2F, plus:',
-    features: [
-      '1:1 private training priority scheduling',
-      'Fully personalised performance blueprint',
-      'Weekly high-level strategy consultations',
-      "Direct access to Elom's network of HN Individuals, Founders and Investors",
-      'Travel-adjusted programming',
-      'Monthly Networking Event Tickets',
-      'Final Performance review & recalibration',
-    ],
-    bestFor: 'Founders, leaders, and high-performers who want physical transformation and personal discipline alignment.',
+    includes: '',
+    features: [],
+    bestFor: '',
+    exclusive: true,
     highlighted: false,
     tier: 'elite' as const,
   },
@@ -84,20 +77,20 @@ function PackageCard({ pkg }: { pkg: typeof packages[0] }) {
   const borderColor = pkg.highlighted
     ? 'border-[#24554B]/40'
     : pkg.tier === 'elite'
-    ? 'border-[#B86B4B]/30'
+    ? 'border-[#D4A843]/30'
     : 'border-white/5 hover:border-white/10'
 
   return (
     <div className={`relative p-8 sm:p-10 border transition-all duration-300 bg-[#1F1F1F]/50 ${borderColor} ${
       pkg.highlighted ? 'ring-1 ring-[#24554B]/20' : ''
-    } ${pkg.tier === 'elite' ? 'ring-1 ring-[#B86B4B]/10' : ''}`}>
+    } ${pkg.tier === 'elite' ? 'ring-1 ring-[#D4A843]/10' : ''}`}>
       {pkg.highlighted && (
         <div className="absolute top-0 right-0 bg-[#24554B] text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5">
           Popular
         </div>
       )}
       {pkg.tier === 'elite' && (
-        <div className="absolute top-0 right-0 bg-[#B86B4B] text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 flex items-center gap-1.5">
+        <div className="absolute top-0 right-0 bg-[#D4A843] text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 flex items-center gap-1.5">
           <Crown size={10} />
           Elite
         </div>
@@ -118,36 +111,44 @@ function PackageCard({ pkg }: { pkg: typeof packages[0] }) {
 
       <div className="h-px bg-white/5 mb-6" />
 
-      {pkg.includes && (
-        <p className="text-[#6F8F85] text-xs font-bold uppercase tracking-wide mb-4">
-          {pkg.includes}
-        </p>
-      )}
-
-      <div className="space-y-3 mb-6">
-        {pkg.features.map((feature) => (
-          <div key={feature} className="flex items-start gap-3">
-            <Check size={14} className={`shrink-0 mt-0.5 ${
-              pkg.tier === 'elite' ? 'text-[#B86B4B]' : 'text-[#24554B]'
-            }`} />
-            <span className="text-[#D8CFC4] text-xs leading-relaxed">{feature}</span>
-          </div>
-        ))}
-      </div>
-
-      {pkg.tier === 'elite' && (
-        <div className="mb-6 border-t border-white/5 pt-4">
-          <p className="text-[#D8CFC4] text-xs italic">This is more than fitness.</p>
-          <p className="text-white text-xs font-bold">It's leveling up your lifestyle.</p>
+      {pkg.exclusive ? (
+        <div className="mb-6 flex flex-col items-center justify-center text-center py-8">
+          <p className="text-[#D8CFC4] text-sm italic mb-2">This is more than fitness.</p>
+          <p className="text-white text-base font-bold mb-6">It's leveling up your lifestyle.</p>
+          <p className="text-[#D4A843] text-xs font-bold uppercase tracking-widest mb-2">
+            By application only
+          </p>
+          <p className="text-[#6F8F85] text-xs leading-relaxed max-w-xs">
+            Request a consultation to receive the full details of what's included in the Elite package.
+          </p>
         </div>
-      )}
+      ) : (
+        <>
+          {pkg.includes && (
+            <p className="text-[#6F8F85] text-xs font-bold uppercase tracking-wide mb-4">
+              {pkg.includes}
+            </p>
+          )}
 
-      <div className="mb-6">
-        <p className="text-xs text-[#6F8F85]">
-          <span className="font-bold text-white">Best suited for: </span>
-          {pkg.bestFor}
-        </p>
-      </div>
+          <div className="space-y-3 mb-6">
+            {pkg.features.map((feature) => (
+              <div key={feature} className="flex items-start gap-3">
+                <Check size={14} className={`shrink-0 mt-0.5 ${
+                  pkg.tier === 'elite' ? 'text-[#D4A843]' : 'text-[#24554B]'
+                }`} />
+                <span className="text-[#D8CFC4] text-xs leading-relaxed">{feature}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mb-6">
+            <p className="text-xs text-[#6F8F85]">
+              <span className="font-bold text-white">Best suited for: </span>
+              {pkg.bestFor}
+            </p>
+          </div>
+        </>
+      )}
 
       <a
         href="https://calendly.com/elomahlijah/30min"
@@ -157,11 +158,11 @@ function PackageCard({ pkg }: { pkg: typeof packages[0] }) {
           pkg.highlighted
             ? 'bg-[#24554B] text-white hover:bg-[#1D4A40]'
             : pkg.tier === 'elite'
-            ? 'bg-[#B86B4B] text-white hover:bg-[#A35D40]'
+            ? 'bg-[#D4A843] text-white hover:bg-[#C49833]'
             : 'border border-white/20 text-white hover:bg-[#24554B] hover:border-[#24554B]'
         }`}
       >
-        Book A Consultation
+        {pkg.exclusive ? 'Request Details' : 'Book A Consultation'}
       </a>
     </div>
   )
@@ -184,7 +185,7 @@ export default function Packages() {
     <section id="packages" ref={ref} className="py-24 px-6">
       <div className={`max-w-7xl mx-auto transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#B86B4B] mb-4 block">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#D4A843] mb-4 block">
             The Packages
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase leading-tight mb-4">

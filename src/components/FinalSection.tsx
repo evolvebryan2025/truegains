@@ -43,7 +43,7 @@ export default function FinalSection() {
             href="https://calendly.com/elomahlijah/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block border border-white/20 hover:bg-[#B86B4B] hover:text-white hover:border-[#B86B4B] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all"
+            className="inline-block border border-white/20 hover:bg-[#D4A843] hover:text-white hover:border-[#D4A843] text-white px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all"
           >
             Book A Consultation
           </a>

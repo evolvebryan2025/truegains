@@ -1,12 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 
-const galleryImages = [
-  { src: '/images/caya-drive/DSC00325.jpg', alt: 'Elom carrying the Caya flag on the run' },
-  { src: '/images/caya-drive/DSC00443.jpg', alt: 'Elom with the crew post-training' },
-  { src: '/images/caya-drive/DSC00277.jpg', alt: 'Elom leading the Caya Run Club pack' },
-  { src: '/images/caya-drive/_DSC0619.JPG', alt: 'Elom connecting with the community' },
-  { src: '/images/caya-drive/DSC00523.jpg', alt: 'Elom at the venue post-run' },
-  { src: '/images/caya-drive/DSC00289.jpg', alt: 'Elom leading the crew on the vehicle' },
+const transformationImages = [
+  { src: '/images/transformations/transformation-01.jpg', alt: 'Male client before and after transformation' },
+  { src: '/images/transformations/transformation-02.jpg', alt: 'Female client before and after transformation' },
+  { src: '/images/transformations/transformation-03.jpg', alt: 'Male client muscle gain transformation' },
+  { src: '/images/transformations/transformation-04.jpg', alt: 'Female client weight loss transformation' },
+  { src: '/images/transformations/transformation-05.jpg', alt: 'Male client body recomposition transformation' },
+  { src: '/images/transformations/transformation-06.jpg', alt: 'Female client fitness transformation' },
+  { src: '/images/transformations/transformation-07.jpg', alt: 'Male client lean muscle transformation' },
+  { src: '/images/transformations/transformation-08.jpg', alt: 'Female client body transformation' },
+  { src: '/images/transformations/transformation-09.jpg', alt: 'Male client dramatic weight loss transformation' },
+  { src: '/images/transformations/transformation-10.jpg', alt: 'Female client athletic transformation' },
 ]
 
 export default function TrainWithCaya() {
@@ -43,12 +47,16 @@ export default function TrainWithCaya() {
           </p>
         </div>
 
-        {/* Visual Content - Transformation & Training Photos */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {galleryImages.map((img) => (
+        {/* Client Transformations Grid */}
+        <div className="text-center mb-8">
+          <p className="text-[#24554B] text-xs font-bold uppercase tracking-widest mb-2">Real Results</p>
+          <p className="text-3xl sm:text-4xl font-black text-[#1F1F1F]">500+ Client Transformations</p>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4">
+          {transformationImages.map((img, i) => (
             <div
-              key={img.src}
-              className="relative overflow-hidden aspect-[4/3]"
+              key={`${img.src}-${i}`}
+              className="relative overflow-hidden aspect-[3/4]"
             >
               <img
                 src={img.src}
@@ -57,7 +65,7 @@ export default function TrainWithCaya() {
                 decoding="async"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
           ))}
         </div>

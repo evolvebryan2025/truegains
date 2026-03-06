@@ -18,19 +18,10 @@ const galleryImages = [
   { src: '/images/caya-drive/DSC00289.jpg', alt: 'Runners pushing the pace' },
   { src: '/images/caya-drive/DSC00325.jpg', alt: 'Elom carrying the Caya flag' },
   { src: '/images/caya-drive/DSC00361.jpg', alt: 'Community run in progress' },
-  { src: '/images/caya-drive/DSC00382.jpg', alt: 'Runners crossing paths' },
-  { src: '/images/caya-drive/DSC00397.jpg', alt: 'Group finishing strong' },
+  { src: '/images/caya-drive/DSC00382.jpg', alt: 'Caya crew on the vehicle' },
   { src: '/images/caya-drive/DSC00433.jpg', alt: 'Runners enjoying the run together' },
   { src: '/images/caya-drive/DSC00443.jpg', alt: 'Fit athletes post-training' },
-  { src: '/images/caya-drive/DSC00475.jpg', alt: 'Post-run smiles' },
-  { src: '/images/caya-drive/DSC00509.jpg', alt: 'Community cool-down moment' },
   { src: '/images/caya-drive/DSC00523.jpg', alt: 'Community at the venue post-run' },
-  { src: '/images/caya-drive/DSC00560.jpg', alt: 'Caya crew hanging out' },
-  { src: '/images/caya-drive/DSC00669.jpg', alt: 'Team spirit at the event' },
-  { src: '/images/caya-drive/DSC00698.jpg', alt: 'Ice bath community moment' },
-  { src: '/images/caya-drive/DSC00703.jpg', alt: 'Post-run recovery session' },
-  { src: '/images/caya-drive/DSC00713.jpg', alt: 'Community bonding after the run' },
-  { src: '/images/caya-drive/DSC00751.jpg', alt: 'Ice bath endurance challenge' },
   { src: '/images/caya-drive/DSC00815.jpg', alt: 'Pull-up training at Caya event' },
 ]
 
@@ -85,15 +76,15 @@ export default function Runclub() {
         <div className="max-w-xl mx-auto">
           <div className="bg-[#1F1F1F] border border-white/5 p-8 space-y-5 mb-8">
             <div className="flex items-center gap-4">
-              <MapPin size={16} className="text-[#B86B4B]" />
+              <MapPin size={16} className="text-[#24554B]" />
               <span className="text-[#D8CFC4] text-sm">Coterie Kitchen, Dubai</span>
             </div>
             <div className="flex items-center gap-4">
-              <Calendar size={16} className="text-[#B86B4B]" />
+              <Calendar size={16} className="text-[#24554B]" />
               <span className="text-[#D8CFC4] text-sm">Every Sunday</span>
             </div>
             <div className="flex items-center gap-4">
-              <Clock size={16} className="text-[#B86B4B]" />
+              <Clock size={16} className="text-[#24554B]" />
               <span className="text-[#D8CFC4] text-sm">8:00AM start (sharp)</span>
             </div>
           </div>

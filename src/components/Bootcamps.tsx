@@ -30,7 +30,7 @@ export default function Bootcamps() {
       <div className={`max-w-5xl mx-auto transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase leading-tight mb-4">
-            Caya <span className="text-[#B86B4B]">Bootcamp</span>
+            Caya <span className="text-[#D4A843]">Bootcamp</span>
           </h2>
           <p className="text-[#D8CFC4] text-lg sm:text-xl font-medium mb-6">
             Higher intensity. Still community.
@@ -49,8 +49,8 @@ export default function Bootcamps() {
             <div className="space-y-4">
               {features.map((f) => (
                 <div key={f.text} className="flex items-start gap-4">
-                  <div className="w-8 h-8 bg-[#B86B4B]/10 border border-[#B86B4B]/20 flex items-center justify-center shrink-0 mt-0.5">
-                    <f.icon size={14} className="text-[#B86B4B]" />
+                  <div className="w-8 h-8 bg-[#D4A843]/10 border border-[#D4A843]/20 flex items-center justify-center shrink-0 mt-0.5">
+                    <f.icon size={14} className="text-[#D4A843]" />
                   </div>
                   <p className="text-[#D8CFC4] text-sm leading-relaxed">{f.text}</p>
                 </div>
@@ -82,7 +82,7 @@ export default function Bootcamps() {
               href="https://calendly.com/elomahlijah/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block w-full text-center bg-[#B86B4B] text-white font-bold uppercase tracking-widest py-4 text-xs hover:bg-[#A35D40] transition-colors"
+              className="inline-block w-full text-center bg-[#D4A843] text-white font-bold uppercase tracking-widest py-4 text-xs hover:bg-[#C49833] transition-colors"
             >
               Book Your Spot
             </a>
