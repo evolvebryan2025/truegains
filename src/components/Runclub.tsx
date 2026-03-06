@@ -13,15 +13,9 @@ const galleryImages = [
   { src: '/images/caya-drive/DSC00219.jpg', alt: 'Community group photo' },
   { src: '/images/caya-drive/DSC00249.jpg', alt: 'Runners on the route' },
   { src: '/images/caya-drive/DSC00257.jpg', alt: 'Mid-run energy' },
-  { src: '/images/caya-drive/DSC00261.jpg', alt: 'Crowd energy at Caya Runclub event' },
   { src: '/images/caya-drive/DSC00277.jpg', alt: 'Group running with Caya Run Club banner' },
-  { src: '/images/caya-drive/DSC00289.jpg', alt: 'Runners pushing the pace' },
-  { src: '/images/caya-drive/DSC00325.jpg', alt: 'Elom carrying the Caya flag' },
   { src: '/images/caya-drive/DSC00361.jpg', alt: 'Community run in progress' },
-  { src: '/images/caya-drive/DSC00382.jpg', alt: 'Caya crew on the vehicle' },
   { src: '/images/caya-drive/DSC00433.jpg', alt: 'Runners enjoying the run together' },
-  { src: '/images/caya-drive/DSC00443.jpg', alt: 'Fit athletes post-training' },
-  { src: '/images/caya-drive/DSC00523.jpg', alt: 'Community at the venue post-run' },
   { src: '/images/caya-drive/DSC00815.jpg', alt: 'Pull-up training at Caya event' },
 ]
 
